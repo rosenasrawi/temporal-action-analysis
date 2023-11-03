@@ -16,8 +16,6 @@ files = {
     'eeg': []
 }
 
-base = dirs['home'] + dirs['eeg']
-
 for sub in subjects:
 
     sub_file = []
@@ -25,13 +23,15 @@ for sub in subjects:
     for ses in sessions:
     
         file = '/rn6_s' + str(sub) + ses + '.bdf'
-        sub_file.append(base + file)
+        sub_file.append(dirs['home'] + dirs['eeg'] + file)
 
     files['eeg'].append(sub_file)
 
 # Channels
 
-drop_chan = ['EXG1', 'EXG2', 'GSR1', 'GSR2', 'Erg1', 'Erg2', 'Resp', 'Plet', 'Temp']
-
+channels = {
+    'drop': ['EXG1', 'EXG2', 'GSR1', 'GSR2', 'Erg1', 'Erg2', 'Resp', 'Plet', 'Temp'],
+    'ref': ['EXG1', 'EXG2']
+}
 
 # Triggers
