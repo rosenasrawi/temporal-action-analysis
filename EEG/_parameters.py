@@ -7,7 +7,8 @@ dirs = {
     'home': '/Users/rosenasrawi/Documents/VU PhD/Projects/rn6 - Temporal action',
     'eeg': '/Data/lab/EEG',
     'log': '/Data/lab/logfiles',
-    'raw': '/Data/processed/raw'
+    'raw': '/Data/processed/raw',
+    'ica': '/Data/processed/ica'
 }
 
 # Files
