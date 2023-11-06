@@ -25,3 +25,16 @@ channels = {
 triggers = {
     'enc1': list(range(1,9))
 }
+
+# Event dict
+
+event_id = {
+    'same/itemL/respL': 1,
+    'same/itemL/respR': 2,
+    'same/itemR/respL': 3,
+    'same/itemR/respR': 4,
+    'rvrs/itemL/respL': 5,
+    'rvrs/itemL/respR': 6,
+    'rvrs/itemR/respL': 7,
+    'rvrs/itemR/respR': 8,
+}
