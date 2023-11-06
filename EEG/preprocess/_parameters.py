@@ -15,23 +15,6 @@ dirs['raw'] = dirs['data'] + '/processed/raw'
 dirs['ica'] = dirs['data'] + '/processed/ica'
 dirs['epoch'] = dirs['data'] + '/processed/epoch'
 
-
-# Files
-files = {
-    'eeg': []
-}
-
-for sub in subjects:
-
-    sub_file = []
-    
-    for ses in sessions:
-    
-        file = '/eeg_s' + str(sub) + ses + '.bdf'
-        sub_file.append(dirs['home'] + dirs['eeg'] + file)
-
-    files['eeg'].append(sub_file)
-
 # Channels
 channels = {
     'drop': ['EXG1', 'EXG2', 'GSR1', 'GSR2', 'Erg1', 'Erg2', 'Resp', 'Plet', 'Temp'],
