@@ -15,6 +15,7 @@ dirs['raw'] = dirs['data'] + '/processed/raw'
 dirs['ica'] = dirs['data'] + '/processed/ica'
 dirs['epoch'] = dirs['data'] + '/processed/epoch'
 dirs['tfr'] = dirs['data'] + '/processed/tfr'
+dirs['cvsi'] = dirs['data'] + '/processed/cvsi'
 
 # Channels
 channels = {
@@ -40,9 +41,14 @@ event_id = {
     'rvrs/itemR/respR': 8,
 }
 
+
+# Conditions
+
 cond = {
     'visual': ['same/itemL', 'same/itemR', 
                'rvrs/itemL', 'rvrs/itemR'],
     'motor': ['same/respL', 'same/respR', 
               'rvrs/respL', 'rvrs/respR']
 }
+
+cvsi_cond = ['vis/same', 'mot/same', 'vis/rvrs', 'mot/rvrs']
