@@ -41,7 +41,6 @@ event_id = {
     'rvrs/itemR/respR': 8,
 }
 
-
 # Conditions
 
 cond = {
@@ -50,5 +49,3 @@ cond = {
     'motor': ['same/respL', 'same/respR', 
               'rvrs/respL', 'rvrs/respR']
 }
-
-cvsi_cond = ['vis/same', 'mot/same', 'vis/rvrs', 'mot/rvrs']
