@@ -38,3 +38,10 @@ event_id = {
     'rvrs/itemR/respL': 7,
     'rvrs/itemR/respR': 8,
 }
+
+cond = {
+    'visual': ['same/itemL', 'same/itemR', 
+               'rvrs/itemL', 'rvrs/itemR'],
+    'motor': ['same/respL', 'same/respR', 
+              'rvrs/respL', 'rvrs/respR']
+}
