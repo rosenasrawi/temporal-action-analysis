@@ -14,6 +14,7 @@ dirs['log'] = dirs['data'] + '/lab/log'
 dirs['raw'] = dirs['data'] + '/processed/raw'
 dirs['ica'] = dirs['data'] + '/processed/ica'
 dirs['epoch'] = dirs['data'] + '/processed/epoch'
+dirs['tfr'] = dirs['data'] + '/processed/tfr'
 
 # Channels
 channels = {
