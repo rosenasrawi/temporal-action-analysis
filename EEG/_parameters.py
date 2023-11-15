@@ -1,5 +1,5 @@
 # Subs
-subjects = list(range(1,6))
+subjects = list(range(1,9)) + list(range(10, 27))
 sessions = ['a','b']
 
 # Directories
@@ -21,6 +21,35 @@ dirs['cvsi'] = dirs['data'] + '/processed/cvsi'
 channels = {
     'drop': ['EXG1', 'EXG2', 'GSR1', 'GSR2', 'Erg1', 'Erg2', 'Resp', 'Plet', 'Temp'],
     'ref': ['EXG1', 'EXG2']
+}
+
+bad_channels = {
+    1: [''],
+    2: ['P2','PO4'],
+    3: ['P6','PO4','PO8'],
+    4: ['PO3'],
+    5: ['P2'],
+    6: ['P2'],
+    7: ['P2'],
+    8: ['P2'],
+    9: ['PO4'],
+    10: ['P2'],
+    11: [''],
+    12: ['P2', 'P4'],
+    13: ['P2'],
+    14: [''],
+    15: ['P2'],
+    16: ['P2', 'FT8'],
+    17: ['P2'],
+    18: ['P2','PO4', 'O2', 'PO7'],
+    19: [''],
+    20: [''],
+    21: ['P2','PO4'],
+    22: [''],
+    23: ['P2','PO4', 'P4'],
+    24: ['POz'],
+    25: ['P2'],
+    26: ['P2']
 }
 
 # Triggers
