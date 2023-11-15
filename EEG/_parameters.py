@@ -17,6 +17,8 @@ dirs['epoch'] = dirs['data'] + '/processed/epoch'
 dirs['tfr'] = dirs['data'] + '/processed/tfr'
 dirs['cvsi'] = dirs['data'] + '/processed/cvsi'
 
+dirs['plot'] = dirs['home'] + '/Plot'
+
 # Channels
 channels = {
     'drop': ['EXG1', 'EXG2', 'GSR1', 'GSR2', 'Erg1', 'Erg2', 'Resp', 'Plet', 'Temp'],
