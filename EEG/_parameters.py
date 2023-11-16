@@ -16,6 +16,7 @@ dirs['ica'] = dirs['data'] + '/processed/ica'
 dirs['epoch'] = dirs['data'] + '/processed/epoch'
 dirs['tfr'] = dirs['data'] + '/processed/tfr'
 dirs['cvsi'] = dirs['data'] + '/processed/cvsi'
+dirs['stat'] = dirs['data'] + '/processed/stat'
 
 dirs['plot'] = dirs['home'] + '/Plot'
 
