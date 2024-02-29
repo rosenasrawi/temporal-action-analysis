@@ -57,7 +57,9 @@ bad_channels = {
 
 # Triggers
 triggers = {
-    'enc1': list(range(1,9))
+    'enc1': list(range(1,9)),
+    'prob1': list(range(21,29)),
+    'prob2': list(range(51,59))
 }
 
 # Event dict
@@ -72,6 +74,14 @@ event_id = {
     'rvrs/itemR/respL': 7,
     'rvrs/itemR/respR': 8,
 }
+
+probe1_id = event_id.copy()
+for key in probe1_id:
+    probe1_id[key] += 20
+
+probe2_id = event_id.copy()
+for key in probe2_id:
+    probe2_id[key] += 50
 
 # Conditions
 
