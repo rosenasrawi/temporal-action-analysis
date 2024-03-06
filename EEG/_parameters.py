@@ -59,7 +59,9 @@ bad_channels = {
 triggers = {
     'enc1': list(range(1,9)),
     'prob1': list(range(21,29)),
-    'prob2': list(range(51,59))
+    'prob2': list(range(51,59)),
+    'resp1': list(range(31,49)),
+    'resp2': list(range(61,79)),
 }
 
 # Event dict
@@ -76,12 +78,44 @@ event_id = {
 }
 
 probe1_id = event_id.copy()
-for key in probe1_id:
-    probe1_id[key] += 20
-
 probe2_id = event_id.copy()
-for key in probe2_id:
+
+for key in event_id:
+    probe1_id[key] += 20
     probe2_id[key] += 50
+
+
+resp1_id = {
+    'same/itemL/respL': 31,
+    'same/itemL/respR': 42,
+    'same/itemR/respL': 33,
+    'same/itemR/respR': 44,
+    'rvrs/itemL/respL': 45,
+    'rvrs/itemL/respR': 36,
+    'rvrs/itemR/respL': 47,
+    'rvrs/itemR/respR': 38,
+}
+
+resp2_id = {
+    'same/itemL/respL': 71,
+    'same/itemL/respR': 62,
+    'same/itemR/respL': 73,
+    'same/itemR/respR': 64,
+    'rvrs/itemL/respL': 65,
+    'rvrs/itemL/respR': 76,
+    'rvrs/itemR/respL': 67,
+    'rvrs/itemR/respR': 78,
+}
+
+# Time-windows
+    
+time_window = {
+    'enc1': [-1,4],
+    'prob1': [-1,3],
+    'prob2': [-3,3],
+    'resp1': [-1,3],
+    'resp2': [-3,3]
+}
 
 # Conditions
 
