@@ -86,8 +86,11 @@ for key in probe2_id:
 # Conditions
 
 cond = {
-    'visual': ['same/itemL', 'same/itemR', 
-               'rvrs/itemL', 'rvrs/itemR'],
-    'motor': ['same/respL', 'same/respR', 
-              'rvrs/respL', 'rvrs/respR']
+    'visual': ['itemL', 'itemR'],
+    'vis-samerev': ['same/itemL', 'same/itemR', 
+                    'rvrs/itemL', 'rvrs/itemR'],
+
+    'motor': ['respL', 'respR'],
+    'mot-samerev': ['same/respL', 'same/respR', 
+                    'rvrs/respL', 'rvrs/respR']
 }
