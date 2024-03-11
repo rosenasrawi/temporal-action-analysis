@@ -10,7 +10,7 @@ dirs = {
 }
 
 dirs['eeg'] = dirs['data'] + '/lab/EEG'
-dirs['log'] = dirs['data'] + '/lab/log'
+dirs['log'] = dirs['data'] + '/lab/logfiles'
 dirs['raw'] = dirs['data'] + '/processed/raw'
 dirs['ica'] = dirs['data'] + '/processed/ica'
 dirs['epoch'] = dirs['data'] + '/processed/epoch'
@@ -77,35 +77,33 @@ event_id = {
     'rvrs/itemR/respR': 8,
 }
 
-probe1_id = event_id.copy()
-probe2_id = event_id.copy()
+resp_id = {
+    'same/itemL/respL': 1,
+    'same/itemL/respR': 2,
+    'same/itemR/respL': 3,
+    'same/itemR/respR': 4,
+    'rvrs/itemR/respR': 5,
+    'rvrs/itemR/respL': 6,
+    'rvrs/itemL/respR': 7,
+    'rvrs/itemL/respL': 8,
+}
 
-for key in event_id:
+probe1_id = resp_id.copy()
+probe2_id = resp_id.copy()
+
+for key in resp_id:
     probe1_id[key] += 20
     probe2_id[key] += 50
 
+resp1 = [30,40,30,40,40,30,40,30]
+resp2 = [70,60,70,60,60,70,60,70]
 
-resp1_id = {
-    'same/itemL/respL': 31,
-    'same/itemL/respR': 42,
-    'same/itemR/respL': 33,
-    'same/itemR/respR': 44,
-    'rvrs/itemL/respL': 45,
-    'rvrs/itemL/respR': 36,
-    'rvrs/itemR/respL': 47,
-    'rvrs/itemR/respR': 38,
-}
+resp1_id = resp_id.copy()
+resp2_id = resp_id.copy()
 
-resp2_id = {
-    'same/itemL/respL': 71,
-    'same/itemL/respR': 62,
-    'same/itemR/respL': 73,
-    'same/itemR/respR': 64,
-    'rvrs/itemL/respL': 65,
-    'rvrs/itemL/respR': 76,
-    'rvrs/itemR/respL': 67,
-    'rvrs/itemR/respR': 78,
-}
+for i, key in enumerate(resp_id):
+    resp1_id[key] += resp1[i]
+    resp2_id[key] += resp2[i]
 
 # Time-windows
     
