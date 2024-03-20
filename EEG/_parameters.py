@@ -126,3 +126,13 @@ cond = {
     'mot-samerev': ['same/respL', 'same/respR', 
                     'rvrs/respL', 'rvrs/respR']
 }
+
+# Plot colors
+
+palette ={
+    'blue': '#96bfe6',
+    'green': '#8cdea1',
+    'orange': '#ff7340',
+    'yellow': '#facf73',
+    'grey': '#999999'
+}
